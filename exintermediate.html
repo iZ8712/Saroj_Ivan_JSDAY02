@@ -6,8 +6,49 @@
     <title></title>
 </head>
 <body>
+    
+    <input type="text" id="name">
+    
+    <input type="number" id="students" min="1" max="100">
+    
+    <button id="result">Result</button>
+    
+    <p id="grade">Your Grade is</p>
+    
+    
     <script>
-        var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+        
+        
+        document.getElementById("result").onclick = function() {
+            
+            var x = document.getElementById("students").value;
+            
+            if ( x <= 60) {
+                
+                document.getElementById("grade").innerHTML = document.getElementById("grade").innerHTML + " F";
+                
+        }   else if ( x <= 70) {
+                
+                document.getElementById("grade").innerHTML = document.getElementById("grade").innerHTML + " E";
+                
+        }   else if ( x <= 80) {
+                
+                document.getElementById("grade").innerHTML = document.getElementById("grade").innerHTML + " C";
+                
+        }   else if ( x <= 90) {
+                
+                document.getElementById("grade").innerHTML = document.getElementById("grade").innerHTML + " B";
+        
+        }   else if ( x <= 100) {
+                
+                document.getElementById("grade").innerHTML = document.getElementById("grade").innerHTML + " A";
+        
+        }
+        
+};
+        
+        
+        /*var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
 
         var Avgmarks = 0;
 
@@ -19,19 +60,19 @@
         document.write("Average grade: " + (Avgmarks) / students.length);
 
         if (avg < 60) {
-            document.write("Grade : F");
+            console.log("Grade : F");
         }
         else if (avg < 70) {
-            document.write("Grade : D");
+            console.log("Grade : D");
         }
         else if (avg < 80) {
-            document.write("Grade : C");
+            console.log("Grade : C");
         } else if (avg < 90) {
-            document.write("Grade : B");
+            console.log("Grade : B");
         } else if (avg < 100) {
-            document.write("Grade : A");
-        }
-        document.write(students);
+            console.log("Grade : A");
+        }*/
+        
     </script>
 </body>
 </html>
