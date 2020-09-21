@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    
+    <title>Ex01</title>
+    
+</head>
+
+<body>
+
+
+    <button onclick="temp(-5,25)">Weather for Today</button>
+
+    <p id="weather"></p>
+
+<script>
+
+    
+    
+    function temp(min, max) {
+        
+    var random =  Math.floor(Math.random() * (max - min)) + min;
+    console.log(random);
+    if (random < 10) {
+        
+   document.getElementById("weather").innerHTML="It is cold";
+   
+    } else {
+    
+   document.getElementById("weather").innerHTML="It is warm";
+   
+    };
+};
+    
+    // document.getElementById('weather').innerHTML = temp(-5,25)
+    
+    
+    
+    
+</script>
+
+</body>
+
+
+</html>
