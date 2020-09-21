@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    
+    <title>Ex01</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+    
+    <section id="box">
+      
+      
+      
+    
+    <div id="box1">
+        
+        
+
+    </div>
+    
+    
+    <!--<div id="box2">
+        
+        
+    </div>-->
+    
+    </section>
+    
+    <button onclick="temp(-5,25)">Weather for Today</button>
+
+    <p id="weather"></p>
+
+<script>
+   
+   function temp(min, max) {
+
+      var random =  Math.floor(Math.random() * (max - min)) + min;
+      console.log(random);
+       
+      switch (true) {
+         case (random <= 10):
+             document.getElementById("box1").style.backgroundColor = "blue";
+             break;
+          case (random >= 10):
+             document.getElementById("box1").style.backgroundColor = "green";
+             break;
+      }
+   
+   }
+
+
+
+    
+    
+   /*function temp(min, max) {
+        
+    var random =  Math.floor(Math.random() * (max - min)) + min;
+    console.log(random);
+    if (random < 10) {
+        
+   document.getElementById("box1").style.display = "inline";
+   
+    } else {
+    
+   document.getElementById("box2").style.display = "inline";
+   
+    };
+};
+    
+    // document.getElementById('weather').innerHTML = temp(-5,25)*/
+    
+    
+    
+    
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,28 @@
+
+#box {
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    
+}
+
+
+#box1 {
+    
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    
+}
+
+#box2 {
+    
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    display: none;
+    
+}
